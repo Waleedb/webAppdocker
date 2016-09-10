@@ -1,3 +1,4 @@
-FROM windowsservercore
-COPY testfile.txt c:\\
-RUN dir c:\
+FROM microsoft/dotnet:1.0.0:rc2-core
+WORKDIR /webappdocker
+COPY /webappdocker /webappdocker
+ENTRYPOINT dotnet webappdocker.dll
