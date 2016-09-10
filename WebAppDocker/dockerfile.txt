@@ -1,0 +1,3 @@
+FROM windowsservercore
+COPY testfile.txt c:\\
+RUN dir c:\
